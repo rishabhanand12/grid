@@ -1,0 +1,40 @@
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+h6 {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 32px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    
+    .hero & {
+        background-color: transparent;
+        border: 2px solid black;
+    }
+
+}
+
+.grid-text {
+    padding: 50px;
+    align-self: center;
+}
+
+.text-center {
+    text-align: center;
+}

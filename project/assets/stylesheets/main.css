@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-1-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+h6 {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 32px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.hero .btn {
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.grid-text {
+  padding: 50px;
+  align-self: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+}
+.header .logo h1 {
+  color: #292929;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.header .nav-links a {
+  text-transform: uppercase;
+  margin-left: 20px;
+  color: #716c6a;
+}
+.header li a[href$=".html"] {
+  color: #bc8b3e;
+}
+
+.hero {
+  background-color: #f5e3d7;
+}
+
+.hero-img {
+  grid-column: 1/span 2;
+}
+.hero-img img {
+  width: 100%;
+}
+
+.hero-text {
+  grid-column: 3/span 2;
+}
+.hero-text h6 {
+  text-transform: uppercase;
+  color: #aaa7a5;
+  letter-spacing: 2px;
+}
+.hero-text h2 {
+  color: #393939;
+}
+.hero-text h2 strong {
+  font-weight: bold;
+  color: #273131;
+}
+.hero-text p {
+  color: #d6c9c1;
+}
+
+.skills-text-left {
+  grid-column: 1/span 2;
+}
+.skills-text-left h6 {
+  color: #f2c782;
+}
+.skills-text-left p {
+  color: #d6c9c1;
+}
+
+.skills-text-right {
+  grid-column: 4;
+  background-color: #bc8b3e;
+  width: 100%;
+  height: 100%;
+}
+
+.skills img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.experiences-img {
+  grid-column: 1/span 2;
+}
+.experiences-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.experiences-text {
+  grid-column: 3/span 2;
+  background-color: #fc683e;
+  width: 100%;
+  height: 100%;
+}
+
+.education-text {
+  grid-column: 1/span 2;
+}
+
+.education-img {
+  grid-column: 3/span 2;
+}
+.education-img img {
+  width: 100%;
+  height: 600px;
+}
+
+.bg-gold {
+  background-color: #bc8b3e;
+  color: #ffffff;
+  padding: 50px 50px;
+}
+.bg-gold i {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.bg-crimson {
+  background-color: #fc683e;
+  color: #ffffff;
+  padding: 50px 50px;
+}
+.bg-crimson i {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.bg-black {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 50px;
+}
+.bg-black i {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  color: #3e3e3e;
+  padding: 50px 50px;
+}
+.bg-white i {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
