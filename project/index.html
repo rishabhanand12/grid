@@ -11,7 +11,10 @@
     <header class="header">
         <nav class="header-nav flex">
             <a class="logo" href="index.html"><h1>Stimulus</h1></a>
+            <label  class="ham" for="toggle">&#9776;</label>
+            <input class="ham" id="toggle" type="checkbox">
             <div class="nav-menu">
+               
                 <ul class="nav-links flex">
                     <li><a href="index.html">home</a></li>
                     <li><a href="#">about me</a></li>
@@ -22,94 +25,168 @@
             </div>
         </nav>
     </header>
-    <section class="hero">
-        <article class="hero-article container-1-4">
-            <div class="hero-img">
-                <img src="assets/images/home-img.jpg" alt="#">
-            
-            </div>
+    <main>
+        <section class="hero">
+            <article class="hero-article container-1-4">
+                <div class="hero-img">
+                    <img src="assets/images/home-img.jpg" alt="#">
                 
-            
-            
-            
-            
-            <div class="hero-text grid-text">
-                <h6>welcome to my website</h6>
-                <h2>Hello, I am <strong>Stimulus</strong> currently based in New York City.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sint incidunt? A magni est facilis ex amet. Dolorem, molestiae dolore!</p>
-                <button class="btn">get started</button>
-            </div>
-            
+                </div>
+                <div class="hero-text grid-text">
+                    <h6>welcome to my website</h6>
+                    <h2>Hello, I am <strong>Stimulus</strong> currently based in New York City.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sint incidunt? A magni est facilis ex amet. Dolorem, molestiae dolore!</p>
+                    <button class="btn">get started</button>
+                </div>
+                
+    
+    
+            </article>
+        </section>
+        <section class="skills">
+            <article class="skills-article container-1-4">
+                <div class="skills-text-left grid-text">
+                    <h2>Donec auctor</h2>
+                    <h6>sed vulputate vitae diam quis bibendum</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi corporis iste debitis placeat provident molestiae aperiam dolor recusandae dolores omnis totam veniam sunt pariatur optio eveniet, amet error exercitationem?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste architecto molestias, doloremque illum obcaecati sequi.</p>
+                </div>
+                <img src="assets/images/about-img.jpg" alt="">
+                <div class="skills-text-right grid-text">
+                    <h2>My Skills</h2>
+                    <h6>Photoshop. HTML CSS JS. Web Design</h6>
+                    <!-- <label for="file">Frontend Design</label>
+                    <progress id="file" value="92" max="100"> 92% </progress>
+                    <label for="file">Frontend Design</label>
+                    <progress id="file" value="70" max="100"> 70% </progress>
+
+                    <label for="file">Frontend Design</label>
+                    <progress id="file" value="80" max="100"> 80% </progress> -->
 
 
-        </article>
-    </section>
-    <section class="skills">
-        <article class="skills-article container-1-4">
-            <div class="skills-text-left grid-text">
-                <h2>Donec auctor</h2>
-                <h6>sed vulputate vitae diam quis bibendum</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi corporis iste debitis placeat provident molestiae aperiam dolor recusandae dolores omnis totam veniam sunt pariatur optio eveniet, amet error exercitationem?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste architecto molestias, doloremque illum obcaecati sequi.</p>
+                </div>
+    
+    
+            </article>
+            
+        </section>
+        <section class="services">
+            <div class="container-1-4">
+                <div class="bg-gold grid-text text-center">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Interface Design</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
+                </div>
+                <div class="bg-crimson grid-text text-center">
+                    <i class="fab fa-telegram-plane"></i>
+                    <h3>Media Strategy</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
+                </div>
+                <div class="bg-black grid-text text-center">
+                    <i class="fal fa-table"></i>
+                    <h3>Mobile App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
+                </div>
+                <div class="bg-white grid-text text-center">
+                    <i class="fab fa-html5"></i>
+                    <h3>Coding</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
+                </div>
             </div>
-            <img src="assets/images/about-img.jpg" alt="">
-            <div class="skills-text-right grid-text">
-                <h2>My Skills</h2>
-                <h6>Photoshop. HTML CSS JS. Web Design</h6>
+        </section>
+        <section class="experiences">
+            <article class="experiences-article container-1-4">
+                <div class="experiences-img">
+                    <img src="assets/images/experience-img.jpg" alt="#">
+                </div>
+                <div class="experiences-text grid-text">
+                    <h2>My Experiences</h2>
+                    
+                    <h6>Previous companies and my tasks</h6>
+    
+                    <div class="flex">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="col-text">
+                            <h3>Graphic Designer <small>2014 Jul- 2015 Sep</small></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nesciunt!</p>
+                        </div>
+                        
+                    </div>
+                    <div class="flex">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="col-text">
+                            <h3>Web Designer <small>2015 Oct- 2017 Jan</small></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nesciunt!</p>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+            </article>
+        </section>
+        <section class="education">
+            <article class="education-article container-1-4">
+                <div class="education-text grid-text">
+                  
+                    <h2>My Education</h2>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <div class="flex ">
+                        <i class="fas fa-university"></i>
+                        <div class="col-text">
+                            <h3>Master in Design <small>2008 May- 2014 May</small></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nesciunt!</p>
+                        </div>
+                        
+                    </div>
+                    <div class="flex">
+                        <i class="fas fa-university"></i>
+                        <div class="col-text">
+                            <h3>BAchelor of Arts <small>2008 May- 2011 Dec</small></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, nesciunt!</p>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="education-img">
+                    <img src="assets/images/education-img.jpg" alt="">
+                </div>
+            </article>
+        </section>
+        <section class="form">
+            <article class="form-article container-1-4">
+                <div class="form-text grid-text">
+                    <h2>Say hello..</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, accusantium.</p>
+                    <form action="">
+                        <input class="form-action" type="text" placeholder="Your Name">
+                        <input class="form-action" type="email" placeholder="Your Email">
+                        <textarea class="form-action" name="" id="" cols="30" rows="05" placeholder="Write your message..."></textarea>
+                        <button class="btn">Send</button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="assets/images/contact-img.jpg" alt="">
+                </div>
+                <div class="contact grid-text">
+                    <h2>Visit my office</h2>
+                    <address>456 New Street 22000, New YOrk City, USA</address>
+                    <h2>Contact.</h2>
+    
+                </div>
+            </article>
+        </section>
+        <section class="map">
+            <div class="wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.903906919373!2d76.35242001516764!3d32.20681988114793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus!5e0!3m2!1sen!2sin!4v1581348359417!5m2!1sen!2sin" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
+            
+        </section>
+    </main>
+    <footer class="footer text-center">
+        <small>Copyright &copy; 2020 AltCampus</small>
 
-
-        </article>
-        
-    </section>
-    <section class="services">
-        <div class="container-1-4">
-            <div class="bg-gold grid-text text-center">
-                <i class="fas fa-desktop"></i>
-                <h3>Interface Design</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
-            </div>
-            <div class="bg-crimson grid-text text-center">
-                <i class="fab fa-telegram-plane"></i>
-                <h3>Media Strategy</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
-            </div>
-            <div class="bg-black grid-text text-center">
-                <i class="fal fa-table"></i>
-                <h3>Mobile App</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
-            </div>
-            <div class="bg-white grid-text text-center">
-                <i class="fab fa-html5"></i>
-                <h3>Coding</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, libero! Deleniti labore ducimus veritatis voluptatem?</p>
-            </div>
-        </div>
-    </section>
-    <section class="experiences">
-        <article class="experiences-article container-1-4">
-            <div class="experiences-img">
-                <img src="assets/images/experience-img.jpg" alt="#">
-            </div>
-            <div class="experiences-text grid-text">
-                <h2>My Experiences</h2>
-                <i class="far fa-laptop"></i>
-                <h6>Previous companies and my tasks</h6>
-
-            </div>
-        </article>
-    </section>
-    <section class="education">
-        <article class="education-article container-1-4">
-            <div class="education-text grid-text">
-                <h2>My Education</h2>
-                <h6>Lorem ipsum dolor sit amet.</h6>
-            </div>
-            <div class="education-img">
-                <img src="assets/images/education-img.jpg" alt="">
-            </div>
-        </article>
-    </section>
+    </footer>
     <script src="https://kit.fontawesome.com/6648a94d2e.js" crossorigin="anonymous"></script>
 </body>
 </html>

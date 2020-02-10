@@ -62,13 +62,12 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .container-1-4 {
@@ -76,24 +75,33 @@ a {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 16px;
+}
+
 h2 {
-  font-size: 44px;
-  margin-bottom: 20px;
+  font-size: 2.75rem;
+  margin-bottom: 1.25rem;
 }
 
 h6 {
-  font-size: 12px;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
 }
 
 .btn {
@@ -106,6 +114,11 @@ p {
 .hero .btn {
   background-color: transparent;
   border: 2px solid black;
+}
+.form .btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
 }
 
 .grid-text {
@@ -124,6 +137,10 @@ p {
   width: 100%;
   padding: 40px 100px;
 }
+.header .header-nav {
+  justify-content: space-between;
+  align-items: center;
+}
 .header .logo h1 {
   color: #292929;
   font-size: 24px;
@@ -137,6 +154,10 @@ p {
 .header li a[href$=".html"] {
   color: #bc8b3e;
 }
+.header .ham {
+  display: none;
+  color: #bc8b3e;
+}
 
 .hero {
   background-color: #f5e3d7;
@@ -144,6 +165,7 @@ p {
 
 .hero-img {
   grid-column: 1/span 2;
+  font-size: 0;
 }
 .hero-img img {
   width: 100%;
@@ -180,9 +202,18 @@ p {
 
 .skills-text-right {
   grid-column: 4;
-  background-color: #bc8b3e;
+  background-color: #ecaf4e;
   width: 100%;
   height: 100%;
+}
+.skills-text-right h2 {
+  color: #ffffff;
+}
+.skills-text-right h6 {
+  color: #ffffff;
+}
+.skills-text-right progress {
+  height: 2px;
 }
 
 .skills img {
@@ -193,6 +224,7 @@ p {
 
 .experiences-img {
   grid-column: 1/span 2;
+  font-size: 0;
 }
 .experiences-img img {
   width: 100%;
@@ -205,22 +237,50 @@ p {
   background-color: #fc683e;
   width: 100%;
   height: 100%;
+  color: #ffffff;
+}
+.experiences-text .fas {
+  color: #ffffff;
+  font-size: 32px;
+  margin-right: 10px;
+}
+.experiences-text small {
+  color: #713234;
+}
+.experiences-text .col-text {
+  width: 80%;
 }
 
 .education-text {
   grid-column: 1/span 2;
+  background-color: #ecaf4e;
+  height: 100%;
+  color: #ffffff;
+}
+.education-text .fas {
+  color: #ffffff;
+  font-size: 32px;
+  margin-right: 10px;
+}
+.education-text small {
+  color: #a5811e;
+}
+.education-text .col-text {
+  width: 80%;
 }
 
 .education-img {
   grid-column: 3/span 2;
+  font-size: 0;
 }
 .education-img img {
   width: 100%;
   height: 600px;
+  object-fit: cover;
 }
 
 .bg-gold {
-  background-color: #bc8b3e;
+  background-color: #ecaf4e;
   color: #ffffff;
   padding: 50px 50px;
 }
@@ -257,6 +317,106 @@ p {
 .bg-white i {
   font-size: 44px;
   margin-bottom: 20px;
+}
+
+.form-text {
+  grid-column: 1/span 2;
+  background-color: #fc683e;
+  color: #ffffff;
+}
+.form-text .form-action {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ecaf4e;
+  background-color: transparent;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contact {
+  background-color: #000000;
+  color: #ffffff;
+  height: 100%;
+}
+
+.form-img {
+  grid-column: 3;
+  font-size: 0;
+}
+.form-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.map {
+  background-color: #fc683e;
+  padding: 60px 0;
+}
+
+.footer {
+  padding: 100px 0;
+}
+.footer small {
+  color: #aaa7a5;
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .header {
+    position: static;
+    background-color: #ffffff;
+    padding: 40px 40px;
+  }
+  .header .nav-menu {
+    display: none;
+  }
+  .header .ham {
+    display: inline-block;
+    font-size: 28px;
+  }
+  .header #toggle {
+    display: none;
+  }
+
+  .container-1-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-text {
+    grid-column: 1/span 2;
+  }
+
+  .skills-text-left, .skills-text-right {
+    grid-column: 1/span 2;
+  }
+
+  .skills img {
+    grid-column: 1/span 2;
+  }
+
+  .bg-gold, .bg-crimson, .bg-black, .bg-white {
+    grid-column: 1/span 2;
+  }
+
+  .experiences-text {
+    grid-column: 1/span 2;
+  }
+
+  .education-img {
+    grid-column: 1/span 2;
+  }
+
+  .form-img, .contact {
+    grid-column: 1/span 2;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
